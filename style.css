@@ -168,8 +168,8 @@ main.container {
 }
 
 main.container .card {
-  background: #ffffff;
-  border: 1px solid #f3c1df;
+  background: #1f1f1f;
+  border: 1px solid #ff4fb3;
   padding: 25px;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
@@ -177,13 +177,13 @@ main.container .card {
 
 main.container h2 {
   text-align: center;
-  color: #d81b60;
+  color: #ff69c9;
   margin-bottom: 25px;
 }
 
 main.container h3 {
-  color: #8e244d;
-  margin-top: 25px;
+  color: #ff69c9;
+  margin-top: 30px;
   border-bottom: 1px solid #eeeeee;
   padding-bottom: 8px;
 }
@@ -193,8 +193,8 @@ main.container select,
 main.container textarea {
   width: 100%;
   box-sizing: border-box;
-  padding: 13px;
-  margin-top: 10px;
+  padding: 15px;
+  margin-top: 12px;
   border: 1px solid #dddddd;
   border-radius: 8px;
   font-size: 16px;
@@ -202,7 +202,7 @@ main.container textarea {
 
 main.container button.primary {
   width: 100%;
-  background: #e91e63;
+  background: #ff1493;;
   color: white;
   border: none;
   padding: 15px;
