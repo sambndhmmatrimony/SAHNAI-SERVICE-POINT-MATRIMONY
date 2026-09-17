@@ -161,3 +161,52 @@ footer {
     justify-content: center;
   }
 }
+/* Registration Form Design */
+main.container {
+  max-width: 650px;
+  margin: 30px auto;
+}
+
+main.container .card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+main.container h2 {
+  text-align: center;
+  color: #e91e63;
+  margin-bottom: 25px;
+}
+
+main.container h3 {
+  color: #8e244d;
+  margin-top: 25px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 8px;
+}
+
+main.container input,
+main.container select,
+main.container textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  margin-top: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+main.container button.primary {
+  width: 100%;
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+}
