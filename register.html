@@ -3,206 +3,283 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Registration - SAHNAI MATRIMONY</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="logo">💍 SAHNAI MATRIMONY</div>
+<header class="header">
+  <div class="logo">💍 SAHNAI MATRIMONY</div>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="register.html">Registration</a>
-      <a href="login.html">Login</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Registration</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
 
-  <main class="about">
+
+<main class="container">
+
+  <div class="card">
 
     <h1>Create Free Account</h1>
 
-    <div class="feature-card">
+    <p class="subtitle">
+      अपना Matrimonial Profile बनाने के लिए Registration करें
+    </p>
 
-      <h2>🔐 Account Details</h2>
 
-      <input type="email" id="email" placeholder="Email Address" required>
-
-      <input type="password" id="password" placeholder="Password" required>
-
+    <form id="registerForm">
 
       <h2>👤 Basic Details</h2>
 
-      <input type="text" id="full_name" placeholder="पूरा नाम" required>
+      <label>पूरा नाम</label>
+      <input
+        type="text"
+        id="full_name"
+        placeholder="पूरा नाम लिखें"
+        required
+      >
 
-      <input type="tel" id="mobile" placeholder="मोबाइल नंबर">
+      <label>मोबाइल नंबर</label>
+      <input
+        type="tel"
+        id="mobile"
+        placeholder="मोबाइल नंबर"
+        required
+      >
 
+      <label>Gender</label>
       <select id="gender" required>
         <option value="">Gender चुनें</option>
-        <option value="Male">पुरुष</option>
-        <option value="Female">महिला</option>
-        <option value="Other">अन्य</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
       </select>
+
 
       <label>जन्म तारीख</label>
       <input type="date" id="date_of_birth">
 
-      <input type="number" id="age" placeholder="उम्र">
 
+      <label>उम्र</label>
+      <input
+        type="number"
+        id="age"
+        placeholder="उम्र"
+      >
+
+
+      <label>Marital Status</label>
       <select id="marital_status">
-        <option value="">वैवाहिक स्थिति चुनें</option>
+        <option value="">चुनें</option>
         <option value="Never Married">Never Married</option>
         <option value="Divorced">Divorced</option>
         <option value="Widowed">Widowed</option>
         <option value="Separated">Separated</option>
       </select>
 
-      <input type="text" id="height" placeholder="कद">
-
-      <input type="text" id="weight" placeholder="वजन">
-
-      <input type="text" id="complexion" placeholder="रंग / Complexion">
-
 
       <h2>🛕 Religion & Community</h2>
 
-      <input type="text" id="religion" placeholder="धर्म">
+      <label>Religion</label>
+      <input
+        type="text"
+        id="religion"
+        placeholder="धर्म"
+      >
 
-      <input type="text" id="caste" placeholder="जाति / Community">
+      <label>Community / Caste</label>
+      <input
+        type="text"
+        id="caste"
+        placeholder="जाति / Community"
+      >
 
-      <input type="text" id="mother_tongue" placeholder="मातृभाषा">
+      <label>Mother Tongue</label>
+      <input
+        type="text"
+        id="mother_tongue"
+        placeholder="मातृभाषा"
+      >
 
 
       <h2>📍 Location</h2>
 
-      <input type="text" id="city" placeholder="शहर">
+      <label>City</label>
+      <input
+        type="text"
+        id="city"
+        placeholder="शहर"
+      >
 
-      <input type="text" id="state" placeholder="राज्य">
+      <label>State</label>
+      <input
+        type="text"
+        id="state"
+        placeholder="राज्य"
+      >
 
 
       <h2>🎓 Education & Career</h2>
 
-      <input type="text" id="education" placeholder="शिक्षा">
+      <label>Education</label>
+      <input
+        type="text"
+        id="education"
+        placeholder="शिक्षा"
+      >
 
-      <input type="text" id="education_details" placeholder="Education की पूरी जानकारी">
+      <label>Occupation</label>
+      <input
+        type="text"
+        id="occupation"
+        placeholder="व्यवसाय"
+      >
 
-      <input type="text" id="college" placeholder="College / University">
+      <label>Company / Business</label>
+      <input
+        type="text"
+        id="company"
+        placeholder="Company / Business"
+      >
 
-      <input type="text" id="occupation" placeholder="व्यवसाय / Occupation">
-
-      <input type="text" id="company" placeholder="Company / Business">
-
-      <input type="text" id="income" placeholder="आय / Income">
+      <label>Income</label>
+      <input
+        type="text"
+        id="income"
+        placeholder="आय"
+      >
 
 
       <h2>👨‍👩‍👧‍👦 Family Details</h2>
 
-      <input type="text" id="father_name" placeholder="पिता का नाम">
+      <label>Father Name</label>
+      <input
+        type="text"
+        id="father_name"
+        placeholder="पिता का नाम"
+      >
 
-      <input type="text" id="mother_name" placeholder="माता का नाम">
+      <label>Mother Name</label>
+      <input
+        type="text"
+        id="mother_name"
+        placeholder="माता का नाम"
+      >
 
-      <input type="text" id="siblings" placeholder="भाई / बहन की जानकारी">
-
-      <select id="family_type">
-        <option value="">Family Type चुनें</option>
-        <option value="Joint">Joint Family</option>
-        <option value="Nuclear">Nuclear Family</option>
-      </select>
-
-      <select id="family_status">
-        <option value="">Family Status चुनें</option>
-        <option value="Middle Class">Middle Class</option>
-        <option value="Upper Middle Class">Upper Middle Class</option>
-        <option value="Rich">Rich</option>
-      </select>
-
-
-      <h2>🍽️ Lifestyle</h2>
-
-      <select id="food_habit">
-        <option value="">Food Habit चुनें</option>
-        <option value="Vegetarian">Vegetarian</option>
-        <option value="Non-Vegetarian">Non-Vegetarian</option>
-        <option value="Eggetarian">Eggetarian</option>
-      </select>
-
-      <select id="smoking">
-        <option value="">Smoking चुनें</option>
-        <option value="No">No</option>
-        <option value="Yes">Yes</option>
-      </select>
-
-      <select id="drinking">
-        <option value="">Drinking चुनें</option>
-        <option value="No">No</option>
-        <option value="Yes">Yes</option>
-      </select>
+      <label>Siblings</label>
+      <input
+        type="text"
+        id="siblings"
+        placeholder="भाई / बहन की जानकारी"
+      >
 
 
       <h2>📝 About Me</h2>
 
-      <textarea id="about" rows="5"
-        placeholder="अपने बारे में पूरी जानकारी लिखें"></textarea>
+      <textarea
+        id="about"
+        rows="5"
+        placeholder="अपने बारे में लिखें"
+      ></textarea>
 
-      <textarea id="bio" rows="4"
-        placeholder="छोटा परिचय"></textarea>
+
+      <label>छोटा परिचय</label>
+
+      <textarea
+        id="bio"
+        rows="4"
+        placeholder="अपना छोटा परिचय लिखें"
+      ></textarea>
 
 
       <h2>❤️ Partner Preference</h2>
 
-      <input type="number" id="partner_age_min"
-        placeholder="Partner की न्यूनतम उम्र">
+      <label>Partner की न्यूनतम उम्र</label>
+      <input
+        type="number"
+        id="partner_age_min"
+        placeholder="जैसे 21"
+      >
 
-      <input type="number" id="partner_age_max"
-        placeholder="Partner की अधिकतम उम्र">
+      <label>Partner की अधिकतम उम्र</label>
+      <input
+        type="number"
+        id="partner_age_max"
+        placeholder="जैसे 30"
+      >
 
-      <input type="text" id="partner_height"
-        placeholder="Partner की पसंदीदा Height">
+      <label>Partner Education</label>
+      <input
+        type="text"
+        id="partner_education"
+        placeholder="Partner की Education"
+      >
 
-      <input type="text" id="partner_education"
-        placeholder="Partner की Education">
+      <label>Partner Occupation</label>
+      <input
+        type="text"
+        id="partner_occupation"
+        placeholder="Partner का Occupation"
+      >
 
-      <input type="text" id="partner_occupation"
-        placeholder="Partner का Occupation">
-
-      <input type="text" id="partner_city"
-        placeholder="Partner का पसंदीदा शहर">
-
-      <input type="text" id="partner_religion"
-        placeholder="Partner का Religion">
-
-      <input type="text" id="partner_caste"
-        placeholder="Partner की Caste / Community">
-
-
-      <h2>📷 Profile Photo</h2>
-
-      <input type="file" id="photo" accept="image/*">
+      <label>Partner City</label>
+      <input
+        type="text"
+        id="partner_city"
+        placeholder="Partner का पसंदीदा शहर"
+      >
 
 
-      <label>
+      <h2>🔐 Account Details</h2>
+
+      <label>Email</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="अपना Email डालें"
+        required
+      >
+
+      <label>Password</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Password बनाएं"
+        required
+      >
+
+
+      <label class="terms">
         <input type="checkbox" id="terms" required>
         मैंने Terms & Privacy Policy स्वीकार की है।
       </label>
 
 
-      <button type="button" onclick="registerUser()"
-        class="primary">
+      <button type="submit" class="primary">
         📝 REGISTER NOW
       </button>
 
       <div id="message"></div>
 
-    </div>
+    </form>
 
-  </main>
+  </div>
 
-  <footer>
-    <p>© 2026 SAHNAI SERVICE POINT MATRIMONY</p>
-  </footer>
+</main>
 
-  <script src="app.js"></script>
+
+<footer>
+  © 2026 SAHNAI MATRIMONY
+</footer>
+
+
+<script src="app.js"></script>
 
 </body>
 </html>
