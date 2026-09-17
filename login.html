@@ -1,0 +1,118 @@
+// ================================
+// SAHNAI SERVICE POINT MATRIMONY
+// Main JavaScript
+// ================================
+
+// Supabase connection
+const SUPABASE_URL = "अपना-Supabase-Project-URL-यहाँ-लिखें";
+const SUPABASE_KEY = "अपनी-Supabase-Publishable-Key-यहाँ-लिखें";
+
+const supabaseClient = supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY,
+  {
+    auth: {
+      persistSession: true,
+      autoRefreshToken: true,
+      detectSessionInUrl: true,
+      storageKey: "sahnai-matrimony-auth"
+    }
+  }
+);
+
+
+// ================================
+// Registration
+// ================================
+
+async function registerUser() {
+
+  const message = document.getElementById("message");
+
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value;
+
+  const full_name = document.getElementById("full_name").value.trim();
+  const mobile = document.getElementById("mobile").value.trim();
+  const gender = document.getElementById("gender").value;
+
+  const date_of_birth =
+    document.getElementById("date_of_birth").value;
+
+  const age =
+    document.getElementById("age").value;
+
+  const marital_status =
+    document.getElementById("marital_status").value;
+
+  const height =
+    document.getElementById("height").value.trim();
+
+  const weight =
+    document.getElementById("weight").value.trim();
+
+  const complexion =
+    document.getElementById("complexion").value.trim();
+
+  const religion =
+    document.getElementById("religion").value.trim();
+
+  const caste =
+    document.getElementById("caste").value.trim();
+
+  const mother_tongue =
+    document.getElementById("mother_tongue").value.trim();
+
+  const city =
+    document.getElementById("city").value.trim();
+
+  const state =
+    document.getElementById("state").value.trim();
+
+  const education =
+    document.getElementById("education").value.trim();
+
+  const education_details =
+    document.getElementById("education_details").value.trim();
+
+  const college =
+    document.getElementById("college").value.trim();
+
+  const occupation =
+    document.getElementById("occupation").value.trim();
+
+  const company =
+    document.getElementById("company").value.trim();
+
+  const income =
+    document.getElementById("income").value.trim();
+
+  const father_name =
+    document.getElementById("father_name").value.trim();
+
+  const mother_name =
+    document.getElementById("mother_name").value.trim();
+
+  const siblings =
+    document.getElementById("siblings").value.trim();
+
+  const family_type =
+    document.getElementById("family_type").value;
+
+  const family_status =
+    document.getElementById("family_status").value;
+
+  const food_habit =
+    document.getElementById("food_habit").value;
+
+  const smoking =
+    document.getElementById("smoking").value;
+
+  const drinking =
+    document.getElementById("drinking").value;
+
+  const about =
+    document.getElementById("about").value.trim();
+
+  const bio =
+    document
